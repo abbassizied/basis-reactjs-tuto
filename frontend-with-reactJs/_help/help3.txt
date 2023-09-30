@@ -1,0 +1,109 @@
+//-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
+.then(() => {
+	console.log("Successfully connected to MongoDB Atlas!");
+})
+.catch((error) => {
+	console.log("Unable to connect to MongoDB Atlas!");
+	console.error(error);
+});
+
+//-------------------------------------------------------------------------------------------------------------------------
+const User = require("./db/userModel");
+
+//-------------------------------------------------------------------------------------------------------------------------
+        //   create JWT token
+        const token = jwt.sign(
+          {
+            userId: user._id,
+            userEmail: user.email,
+          },
+          "RANDOM-TOKEN",
+          { expiresIn: "24h" }
+        );
+//-------------------------------------------------------------------------------------------------------------------------
+email: {
+    type: String,
+    required: [true, "Please provide an Email!"],
+    unique: [true, "Email Exist"],
+  },
+
+  password: {
+    type: String,
+    required: [true, "Please provide a password!"],
+    unique: false,
+  },
+//-------------------------------------------------------------------------------------------------------------------------
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [register, setRegister] = useState(false);
+
+
+
+	type="email"
+	name="email"
+	value={email}
+	onChange={(e) => setEmail(e.target.value)}
+
+
+
+      <Form onSubmit={(e)=>handleSubmit(e)}>
+        {/* submit button */}
+        <Button
+          variant="primary"
+          type="submit"
+          onClick={(e) => handleSubmit(e)}
+        >
+          Register
+        </Button>
+      </Form>
+	  
+	  Add
+	  
+	  
+//  before the return line:
+const handleSubmit = (e) => {
+    // prevent the form from refreshing the whole page
+    e.preventDefault();
+    // make a popup alert showing the "submitted" text
+    alert("Submited");
+  }
+	  
+	  
+    isSuccess: isGetSuccess,
+	isLoading: isGetLoading,	  
+	  
+	  
+if (isGetLoading) {	  
+	  
+} else if (isGetSuccess) {
+
+
+}
+//------------------------------------------------------------------------------------------------------------------------- 
+//-------------------------------------------------------------------------------------------------------------------------
+{
+    "firstName": "Jason",
+    "lastName": "Watmore",
+    "username": "jason",
+    "password": "my-super-secret-password"",
+    "confirmPassword": "george-likes-spicy-chicken",
+    "token": "REPLACE THIS WITH YOUR TOKEN",
+}
+
+
+public class AuthenticateResponse
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Username { get; set; }
+    public string Token { get; set; }
+} 
+//------------------------------------------------------------------------------------------------------------------------- 
+//------------------------------------------------------------------------------------------------------------------------- 
+//------------------------------------------------------------------------------------------------------------------------- 
+//-------------------------------------------------------------------------------------------------------------------------   
+//-------------------------------------------------------------------------------------------------------------------------

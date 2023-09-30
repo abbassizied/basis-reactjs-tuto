@@ -1,0 +1,178 @@
+//---------------------------------------------------------------------------------------------
+//How to expire a single JWT token?
+There are a set of standard key/value pairs that are defined as part of JWT, which you can use on your implementation:
+- iat: Identifies the time at which the JWT was issued. The value must be a Numeric Date.
+- sub: Identifies the subject of the JWT. (This is the user/name/user identifier)
+- Exp (Expiration date): Tokens usually don’t last forever. Exp ensures that whoever is using the token provides a recently generated token
+- Iss (Issuer): The server that issued the token. In our case, it would make sense to include the URI used
+- Aud (Audience): Provides some form of identification of the recipient of this token 
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+verifyExpiration = (token) => {
+    return token.expiryDate.getTime() < new Date().getTime();
+};
+
+//uhhhhhhhhhhh
+   let token = localStorage.getItem(TOKEN);
+    let decodedToken = jwt_decode(token);
+    console.log("Decoded Token", decodedToken);
+    let currentDate = new Date();
+
+    // JWT exp is in seconds
+    if (decodedToken.exp * 1000 < currentDate.getTime()) {
+      console.log("Token expired.");
+    } else {
+      console.log("Valid token");   
+      result = true;
+    }
+
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+      let authorities = [];
+      user.getRoles().then(roles => {
+        for (let i = 0; i < roles.length; i++) {
+          authorities.push("ROLE_" + roles[i].name.toUpperCase());
+        }
+
+        res.status(200).send({
+          id: user.id,
+          username: user.username,
+          email: user.email,
+          roles: authorities,
+          accessToken: token,
+          refreshToken: refreshToken,
+        });
+//-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------- 
+// RefreshToken  
+// to call when our access token expired
+/* When you get an 401 error call /refresh-token route to refresh the token <-- for client side
+-  from client when you call a secured api with access token and it gives you unauthorized error, you can refresh the access token by sending both access and refresh token to get a new access token and call the secured api again with new access token.
+- If you want to use a library to handle auth with less code, you can take a look at passport.js library for express example:
+
+-
+  RefreshToken.createToken = async function (user) {
+    let expiredAt = new Date();
+
+    expiredAt.setSeconds(expiredAt.getSeconds() + config.jwtRefreshExpiration);
+
+    let _token = uuidv4();
+
+    let refreshToken = await this.create({
+      token: _token,
+      userId: user.id,
+      expiryDate: expiredAt.getTime(),
+    });
+
+    return refreshToken.token;
+  };
+
+  RefreshToken.verifyExpiration = (token) => {
+    return token.expiryDate.getTime() < new Date().getTime();
+  };
+*/
+
+//-------------------------------------------------------------------------------------------------
+// use middleware to protect routes
+router.get('/secured-route', tokenMiddleware, async (req, res) => {
+    res.send("secured");
+});
+//-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------------------------
+    const response = {
+        "status": "Logged in",  // <---- to remove.
+		"message": 'login successful',
+        "token": token,
+        "refreshToken": refreshToken,
+    }
+	
+	 	
+// login	
+/*
+  // Update refresh token in memory so server can invalidate it anytime
+  // In this example nodemon restart cause clearing it
+  tokenList[refreshToken] = {
+    id: userData.id
+  };
+
+*/	
+
+export const verifyExpiration = (refreshToken: RefreshToken) => {
+  return refreshToken.expiryDate.getTime() < new Date().getTime();
+};
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+// 
+- Refresh tokens allow users to request new tokens. For example, after a token has expired, a client may perform a request for a new token to be generated by the backend server, which requires a refresh token.
+- You can know how to expire the JWT, then renew the Access Token with Refresh Token.
+
+
+
+*** Send /signin request, return response with refreshToken.
+*** Access resource successfully with accessToken.
+*** When the accessToken is expired, user cannot use it anymore.
+*** Send /refreshtoken request, return response with new accessToken.
+*** Access resource successfully with new accessToken.
+*** Send an expired Refresh Token OR Send an inexistent Refresh Token.
+*** 
+*** 
+*** 
+
+
+
+
+
+- 
+- 
+- 
+- 
+//---------------------------------------------------------------------------------------------
+// Encrypted token
+- This is typically solved in three ways:
+	*** The tokens are made very short lived. For example, 5 minutes. Before the 5 minutes are over, we generate a new one. (often using a separate refresh token).
+	*** Maintain a system that has a list of recently expired tokens.
+	*** There is no server-driven log out, and the assumption is that the client can delete their own tokens.
+- 
+- 
+- 
+- 
+- 
+//---------------------------------------------------------------------------------------------
+// 
+- JWT is useful for
+	*** Authentication
+	*** Secure data transfer
+- 	
+How to Handle Token Expiry in Angular with .Net Core
+- 
+- 
+- 
+- 
+//---------------------------------------------------------------------------------------------
+// create a helper function that checks if the token is expired or not.
+// returns true if the token is expired or false if not expired.
+function isTokenExpired (token) {
+  var decoded = jwt_decode(token)
+
+  if (decoded.exp < Date.now() / 1000) {
+    return true
+  } else {
+    return false
+  }
+} 
+- 
+- 
+- 
+- 
+//--------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------- 
+//---------------------------------------------------------------------------------------------

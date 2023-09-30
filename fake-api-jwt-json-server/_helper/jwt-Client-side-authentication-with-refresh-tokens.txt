@@ -1,0 +1,49 @@
+//---------------------------------------------------------------------------------------------
+    console.log('Before Request') 
+    console.log('After Request')
+    if (response.statusText === 'Unauthorized'){}
+
+    if(!isExpired) return req
+	
+    localStorage.setItem('authTokens', JSON.stringify(response.data))	 
+// -------------------------------------------------------------------------------------------
+-  
+{ expiresIn: '30s' }
+{ expiresIn: "2m" }
+{ expiresIn: "7d" }
+
+ const currentTime = Date.now() / 1000; // convert to seconds
+, { withCredentials: true } 
+ 
+res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: false, sameSite: 'Lax', maxAge: 24*60*60*1000 }); // call succeeded. what is the name of cookie?
+
+
+// Later on a refresh endpoint I look for a cookie and can't find it:
+export const handleRefreshToken = async (req, res) => {
+console.log("Request Cookies", req.cookies);
+const cookies = req.cookies;
+if (!cookies?.refreshToken) return res.sendStatus(401); 
+- 
+-
+//---------------------------------------------------------------------------------------------
+// 
+- How to check access token is expired in react 
+- How To Refresh JWT Tokens Automatically In React 
+-  
+- 
+- 
+- 
+//---------------------------------------------------------------------------------------------
+Let’s see the important points in Authentication: 
+*** User Sign in with Username and Password in a react native app. And gets Access and Refresh tokens in return.
+*** User will have to pass access token to do any CRUD operations later after signin.
+*** If access token is expired, uses refresh token to get new access token.
+*** If refresh token is expired, user will have to signin again.
+*** It is also possible to renew the refresh token at the time of renewing access token. That makes forever logged in authentication system.
+//---------------------------------------------------------------------------------------------
+- This artcle does not discuss about way of generating JWT tokens from backend. It mainly discusses about automatically refreshing received JWT tokens once the user is logged in. We prepare a simple credentials.js file 
+- 
+-   
+- 
+- 
+//---------------------------------------------------------------------------------------------

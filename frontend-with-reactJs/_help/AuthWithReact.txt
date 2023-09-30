@@ -1,0 +1,241 @@
+email:"abbassi@email.com"
+exp: 1685714746
+iat: 1685711146
+id: 5
+role: "admin"
+token: "eyJh Ue8GQBLGeyQX0PnBMq2Ot7Z1yU"
+username: "Zizou87"
+
+{
+email:"" 
+role: ""
+token: ""
+username: ""
+} 
+//---------------------------------------------------------------------------------------------
+			const response = await axios.post(
+				LOGIN_URL,
+				JSON.stringify({ user, pwd }),
+				{
+					headers: { 'Content-Type': 'application/json' },
+					withCredentials: true,
+				}
+			);
+
+
+, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    }
+  }
+  
+  
+<form  method="post" enctype=multipart/form-data> 
+      <img height="200" width="300" src={post.img.url} alt={post.img.alt} />
+src={require("./home/priyanka/Finalproject/src/components/3.jpg")}
+post.img.url
+
+{
+const imgUrl = require('./golden-card.png');
+}
+<img height="200" width="300" src={imgUrl} alt={post.img.alt} />
+
+    "images": [
+        "https://i.ibb.co/g7FWSYv/a.jpg", 
+        "https://i.ibb.co/hX3xQ5K/b.jpg", 
+        "https://i.ibb.co/68TdBNs/c.jpg"
+      ]
+//---------------------------------------------------------------------------------------------
+// Token-based authentication or JWT token in ReactJS for authentication and authorization
+- JSON Web Token == JWT 
+
+//---------------------------------------------------------------------------------------------
+export function* loginFlow() {
+  const check = true;
+  while (check) {
+    const { email, password } = yield take(LOGIN_REQUEST);
+     
+    const token = yield apiCall(Api.login, email, password);
+ 
+    if (token) {
+      sessionStorage.setAuthToken(JSON.stringify(token));
+      const parsedAccessToken = parseJwtToken(token.auth_token);
+      const role = parsedAccessToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+      yield put(setLoginSuccess());
+       
+      }
+    }
+  }
+
+
+ // Below is the code parsing the JWT token:
+function parseJwt(token) {
+const base64Url = token.split('.')[1];
+const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+return JSON.parse(window.atob(base64));
+} 
+//---------------------------------------------------------------------------------------------
+// AuthProvider.js
+import { createContext, useState } from "react";
+const AuthContext = createContext({});
+export const AuthProvider = ({ children }) => {
+  const [auth, setAuth] = useState({});
+  return (
+    <AuthContext.Provider value={{ auth, setAuth }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export default AuthContext;
+
+//---------------------------------------------------------------------------------------------
+import { AuthProvider } from "./context/AuthProvider";
+
+  <React.StrictMode>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  </React.StrictMode>
+
+//---------------------------------------------------------------------------------------------
+// Login.js
+// imports
+import AuthContext from "./context/AuthProvider";
+
+
+const { setAuth } = useContext(authContext);
+
+
+      const accessToken = response?.data?.accessToken;
+      const roles = response?.data?.roles;
+      setAuth({ user, pwd, roles, accessToken });
+	  
+	  
+  function handleLogout() {
+    localStorage.clear();
+    contextData.setNavFlag(false);
+  }	  
+  const role = localStorage.getItem("role-token")
+	  
+	  
+	  
+import Context from "../Context/Context";	  
+const contextData = useContext(Context);
+	  
+        .then((res)=>{
+          contextData.setRole(res.data.roleId)
+          contextData.setPersonId(res.data._id)
+          localStorage.setItem('person-token',res.data._id)	  
+          localStorage.setItem("x-Auth-token",res.data.token)
+            const client     = '11091cf6097423b33d510424'
+            const freelancer = '482d50fb579746e681cb33cc'
+          localStorage.setItem("role-token",res.data.roleId === 'client'? client: freelancer)
+          contextData.setNavFlag(true)
+          navigate("/")	  
+	  
+//---------------------------------------------------------------------------------------------
+    
+GET https://localhost:8000/images/b1.jpg net::ERR_SSL_PROTOCOL_ERROR Image (asynchrone)
+setValueForProperty @ react-dom.development.js:855
+
+
+//---------------------------------------------------------------------------------------------
+    // redirect user to home page
+     window.location.href = '/'
+//---------------------------------------------------------------------------------------------	 
+ const [showB, setShowB] = useState(true);
+ <Counter />
+ {showB && <Counter />}  
+//---------------------------------------------------------------------------------------------
+function App() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem("x-Auth-token")) {
+      navigate("/")
+    }
+  }, []);
+
+  return (
+
+//---------------------------------------------------------------------------------------------
+  let isLoggedin = localStorage.getItem("x-Auth-token");
+  
+   function hasJWT() {
+       let flag = false;
+ 
+       //check user has JWT token
+       localStorage.getItem("token") ? flag=true : flag=false
+      
+       return flag
+   }
+
+
+user && user.accessToken
+
+export const verifyTokenAxios =  (data)=>{
+  return axios({
+        url:`${API}/users/verifyToken`,
+        method:"get",
+        headers:{
+          "x-auth-token":localStorage.getItem("x-Auth-token")
+      }
+      })
+}
+
+function App() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem("x-Auth-token")) {
+      navigate("/")
+    }
+  }, []);
+
+
+//dashboard verification to prevent duplicate tokens and fake users access.
+router.get('/verifyToken',auth,express.json(),async function(request,response){
+  // const _id  = request.header("_id");
+  // const profile =await getProfilePic(_id)
+  response.send({message:'success'})
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

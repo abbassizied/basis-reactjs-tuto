@@ -1,0 +1,445 @@
+[2023-06-22T10:16:16.178] [INFO] app - common middleware called.
+[2023-06-22T10:16:16.178] [INFO] app - Request Data :  {}
+[2023-06-22T10:16:16.182] [INFO] app - common middleware called.
+[2023-06-22T10:16:16.182] [INFO] app - Request Data :  {}
+[2023-06-22T10:17:45.221] [INFO] app - common middleware called.
+[2023-06-22T10:17:45.221] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:19.352] [INFO] app - common middleware called.
+[2023-06-22T10:48:19.352] [INFO] app - Request Data :  { username: 'Zizou87', password: 'my-super-secret-password' }
+[2023-06-22T10:48:19.352] [INFO] app - login endpoint called.
+[2023-06-22T10:48:19.352] [INFO] app - { username: 'Zizou87', password: 'my-super-secret-password' }
+[2023-06-22T10:48:19.360] [INFO] app - accessToken :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:19.360] [INFO] app - *********** nextId *********** 1
+[2023-06-22T10:48:19.363] [INFO] app - refreshToken :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:19.363] [INFO] app - refreshToken already exists!
+[2023-06-22T10:48:21.008] [INFO] app - common middleware called.
+[2023-06-22T10:48:21.009] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:21.011] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:21.011] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:21.011] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:21.011] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:21.014] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423699,
+  exp: 1687423709
+}
+[2023-06-22T10:48:21.024] [INFO] app - common middleware called.
+[2023-06-22T10:48:21.024] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:21.025] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:21.025] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:21.025] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:21.025] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:21.028] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423699,
+  exp: 1687423709
+}
+[2023-06-22T10:48:22.223] [INFO] app - common middleware called.
+[2023-06-22T10:48:22.224] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:22.226] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:22.226] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:22.226] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:22.226] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:22.230] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423699,
+  exp: 1687423709
+}
+[2023-06-22T10:48:22.236] [INFO] app - common middleware called.
+[2023-06-22T10:48:22.237] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:22.238] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:22.238] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:22.238] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:22.238] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:22.240] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423699,
+  exp: 1687423709
+}
+[2023-06-22T10:48:29.812] [INFO] app - common middleware called.
+[2023-06-22T10:48:29.812] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:29.815] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:29.815] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:29.815] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:29.815] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:29.823] [INFO] app - common middleware called.
+[2023-06-22T10:48:29.823] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:29.824] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:29.824] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:29.824] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:29.824] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzNzA5fQ.HXObqPVVd5Trv37y9fEhLZ_NREJpoDt3rjx56mQqwbc
+[2023-06-22T10:48:29.831] [INFO] app - common middleware called.
+[2023-06-22T10:48:29.831] [INFO] app - Request Data :  { withCredentials: true }
+[2023-06-22T10:48:29.832] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:29.832] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:29.840] [INFO] app - common middleware called.
+[2023-06-22T10:48:29.840] [INFO] app - Request Data :  { withCredentials: true }
+[2023-06-22T10:48:29.841] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:29.842] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:37.166] [INFO] app - common middleware called.
+[2023-06-22T10:48:37.167] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:37.169] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:37.169] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:37.169] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:37.169] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:48:37.171] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423709,
+  exp: 1687423829
+}
+[2023-06-22T10:48:37.186] [INFO] app - common middleware called.
+[2023-06-22T10:48:37.186] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:37.187] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:37.187] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:37.187] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:37.187] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:48:37.189] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423709,
+  exp: 1687423829
+}
+[2023-06-22T10:48:46.630] [INFO] app - common middleware called.
+[2023-06-22T10:48:46.630] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:46.632] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:46.632] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:46.632] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:46.632] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:48:46.635] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423709,
+  exp: 1687423829
+}
+[2023-06-22T10:48:46.643] [INFO] app - common middleware called.
+[2023-06-22T10:48:46.643] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:46.645] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:46.645] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:46.645] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:46.645] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:48:46.646] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423709,
+  exp: 1687423829
+}
+[2023-06-22T10:48:48.280] [INFO] app - common middleware called.
+[2023-06-22T10:48:48.280] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:48.281] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:48.281] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:48.282] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:48.282] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:48:48.285] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423709,
+  exp: 1687423829
+}
+[2023-06-22T10:48:48.292] [INFO] app - common middleware called.
+[2023-06-22T10:48:48.293] [INFO] app - Request Data :  {}
+[2023-06-22T10:48:48.294] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:48:48.294] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: '4f11edcf-50b5-4f52-ab28-8d682508dd46',
+  userId: 5,
+  iat: 1687423699,
+  exp: 1687423819
+}
+[2023-06-22T10:48:48.294] [INFO] app - authenticateToken called;
+[2023-06-22T10:48:48.294] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:48:48.296] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687423709,
+  exp: 1687423829
+}
+[2023-06-22T10:52:07.365] [INFO] app - common middleware called.
+[2023-06-22T10:52:07.365] [INFO] app - Request Data :  {}
+[2023-06-22T10:52:07.367] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:52:07.367] [INFO] app - decoded jwt-refreshToken :  TokenExpiredError: jwt expired
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\utility.js:21:14)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\server.js:149:19
+    at Layer.handle [as handle_request] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:280:10) {
+  expiredAt: 2023-06-22T08:50:19.000Z
+}
+[2023-06-22T10:52:07.380] [INFO] app - authenticateToken called;
+[2023-06-22T10:52:07.380] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:52:07.384] [INFO] app - common middleware called.
+[2023-06-22T10:52:07.385] [INFO] app - Request Data :  {}
+[2023-06-22T10:52:07.386] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:52:07.386] [INFO] app - decoded jwt-refreshToken :  TokenExpiredError: jwt expired
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\utility.js:21:14)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\server.js:149:19
+    at Layer.handle [as handle_request] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:280:10) {
+  expiredAt: 2023-06-22T08:50:19.000Z
+}
+[2023-06-22T10:52:07.386] [INFO] app - authenticateToken called;
+[2023-06-22T10:52:07.386] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzQyMzcwOSwiZXhwIjoxNjg3NDIzODI5fQ.IPJtSPrFx42TBkFBZCOqKvGkryedbCs2sVcBnxgVEaM
+[2023-06-22T10:52:07.394] [INFO] app - common middleware called.
+[2023-06-22T10:52:07.394] [INFO] app - Request Data :  { withCredentials: true }
+[2023-06-22T10:52:07.396] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:52:07.396] [INFO] app - decoded jwt-refreshToken :  TokenExpiredError: jwt expired
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\utility.js:21:14)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\server.js:149:19
+    at Layer.handle [as handle_request] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:280:10) {
+  expiredAt: 2023-06-22T08:50:19.000Z
+}
+[2023-06-22T10:52:07.404] [INFO] app - common middleware called.
+[2023-06-22T10:52:07.404] [INFO] app - Request Data :  { withCredentials: true }
+[2023-06-22T10:52:07.405] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:52:07.405] [INFO] app - decoded jwt-refreshToken :  TokenExpiredError: jwt expired
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\utility.js:21:14)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\server.js:149:19
+    at Layer.handle [as handle_request] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:280:10) {
+  expiredAt: 2023-06-22T08:50:19.000Z
+}
+[2023-06-22T10:52:07.415] [INFO] app - common middleware called.
+[2023-06-22T10:52:07.415] [INFO] app - Request Data :  {}
+[2023-06-22T10:52:07.417] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:52:07.417] [INFO] app - decoded jwt-refreshToken :  TokenExpiredError: jwt expired
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\utility.js:21:14)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\server.js:149:19
+    at Layer.handle [as handle_request] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:280:10) {
+  expiredAt: 2023-06-22T08:50:19.000Z
+}
+[2023-06-22T10:52:07.417] [INFO] app - Logout endpoint called.
+[2023-06-22T10:52:07.424] [INFO] app - common middleware called.
+[2023-06-22T10:52:07.425] [INFO] app - Request Data :  {}
+[2023-06-22T10:52:07.426] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiI0ZjExZWRjZi01MGI1LTRmNTItYWIyOC04ZDY4MjUwOGRkNDYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzQyMzY5OSwiZXhwIjoxNjg3NDIzODE5fQ.Pl_caR1B4KHFkaV5oE4_URlOsJtE4fOWoBFqxVkefVk
+[2023-06-22T10:52:07.426] [INFO] app - decoded jwt-refreshToken :  TokenExpiredError: jwt expired
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\utility.js:21:14)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\server.js:149:19
+    at Layer.handle [as handle_request] (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Zied\OneDrive\Documents\Workspace\testing-main-concepts-angular-and-reactjs\fake-api-jwt-json-server\node_modules\express\lib\router\index.js:280:10) {
+  expiredAt: 2023-06-22T08:50:19.000Z
+}
+[2023-06-22T10:52:07.427] [INFO] app - Logout endpoint called.
+[2023-06-22T11:17:54.427] [INFO] app - common middleware called.
+[2023-06-22T11:17:54.428] [INFO] app - Request Data :  {}
+[2023-06-22T11:17:57.783] [INFO] app - common middleware called.
+[2023-06-22T11:17:57.784] [INFO] app - Request Data :  {}
+[2023-06-22T11:17:57.787] [INFO] app - common middleware called.
+[2023-06-22T11:17:57.787] [INFO] app - Request Data :  {}
+[2023-06-23T09:30:11.566] [INFO] app - common middleware called.
+[2023-06-23T09:30:11.568] [INFO] app - Request Data :  {}
+[2023-06-23T09:30:11.573] [INFO] app - common middleware called.
+[2023-06-23T09:30:11.573] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:18.986] [INFO] app - common middleware called.
+[2023-06-24T08:17:18.986] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:18.991] [INFO] app - common middleware called.
+[2023-06-24T08:17:18.991] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:22.386] [INFO] app - common middleware called.
+[2023-06-24T08:17:22.386] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:34.533] [INFO] app - common middleware called.
+[2023-06-24T08:17:34.533] [INFO] app - Request Data :  { username: 'Zizou87', password: 'my-super-secret-password' }
+[2023-06-24T08:17:34.534] [INFO] app - login endpoint called.
+[2023-06-24T08:17:34.534] [INFO] app - { username: 'Zizou87', password: 'my-super-secret-password' }
+[2023-06-24T08:17:34.537] [INFO] app - accessToken :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NDY0fQ.hC2YeWdu0Aa4dhGBTr0DwxvVwh40QsFnKmVGIVKvNNo
+[2023-06-24T08:17:34.537] [INFO] app - *********** nextId *********** 1
+[2023-06-24T08:17:34.539] [INFO] app - refreshToken :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiJkM2Y1YWY1OC1hNTViLTRhYmMtODVmYy05ODllNzE5OTg0NGYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NTc0fQ.m9BxPRkK4Jvo2-pu3jG5a6OjrP35SAZCQPATW0En8b4
+[2023-06-24T08:17:34.539] [INFO] app - refreshToken already exists!
+[2023-06-24T08:17:37.218] [INFO] app - common middleware called.
+[2023-06-24T08:17:37.218] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:37.220] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiJkM2Y1YWY1OC1hNTViLTRhYmMtODVmYy05ODllNzE5OTg0NGYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NTc0fQ.m9BxPRkK4Jvo2-pu3jG5a6OjrP35SAZCQPATW0En8b4
+[2023-06-24T08:17:37.220] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: 'd3f5af58-a55b-4abc-85fc-989e7199844f',
+  userId: 5,
+  iat: 1687587454,
+  exp: 1687587574
+}
+[2023-06-24T08:17:37.220] [INFO] app - authenticateToken called;
+[2023-06-24T08:17:37.220] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NDY0fQ.hC2YeWdu0Aa4dhGBTr0DwxvVwh40QsFnKmVGIVKvNNo
+[2023-06-24T08:17:37.223] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687587454,
+  exp: 1687587464
+}
+[2023-06-24T08:17:37.241] [INFO] app - common middleware called.
+[2023-06-24T08:17:37.241] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:37.242] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiJkM2Y1YWY1OC1hNTViLTRhYmMtODVmYy05ODllNzE5OTg0NGYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NTc0fQ.m9BxPRkK4Jvo2-pu3jG5a6OjrP35SAZCQPATW0En8b4
+[2023-06-24T08:17:37.242] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: 'd3f5af58-a55b-4abc-85fc-989e7199844f',
+  userId: 5,
+  iat: 1687587454,
+  exp: 1687587574
+}
+[2023-06-24T08:17:37.242] [INFO] app - authenticateToken called;
+[2023-06-24T08:17:37.242] [INFO] app - token :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NDY0fQ.hC2YeWdu0Aa4dhGBTr0DwxvVwh40QsFnKmVGIVKvNNo
+[2023-06-24T08:17:37.245] [INFO] app - ****** authenticateToken ******* token : {
+  id: 5,
+  username: 'Zizou87',
+  email: 'abbassi@email.com',
+  role: 'Admin',
+  iat: 1687587454,
+  exp: 1687587464
+}
+[2023-06-24T08:17:39.081] [INFO] app - common middleware called.
+[2023-06-24T08:17:39.081] [INFO] app - Request Data :  {}
+[2023-06-24T08:17:39.084] [INFO] app - Request Cookies(jwt-refreshToken) :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidmFsdWUiOiJkM2Y1YWY1OC1hNTViLTRhYmMtODVmYy05ODllNzE5OTg0NGYiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzU4NzQ1NCwiZXhwIjoxNjg3NTg3NTc0fQ.m9BxPRkK4Jvo2-pu3jG5a6OjrP35SAZCQPATW0En8b4
+[2023-06-24T08:17:39.084] [INFO] app - decoded jwt-refreshToken :  {
+  id: 1,
+  value: 'd3f5af58-a55b-4abc-85fc-989e7199844f',
+  userId: 5,
+  iat: 1687587454,
+  exp: 1687587574
+}
+[2023-06-24T08:17:39.084] [INFO] app - Logout endpoint called.
+[2023-06-24T09:34:28.668] [INFO] app - common middleware called.
+[2023-06-24T09:34:28.671] [INFO] app - Request Data :  {}
+[2023-06-24T10:30:52.442] [INFO] app - common middleware called.
+[2023-06-24T10:30:52.443] [INFO] app - Request Data :  { username: 'Zizou87', password: 'my-super-secret-password' }
+[2023-06-24T10:30:52.444] [INFO] app - login endpoint called.
+[2023-06-24T10:30:52.445] [INFO] app - { username: 'Zizou87', password: 'my-super-secret-password' }
+[2023-06-24T10:30:52.449] [INFO] app - accessToken :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJaaXpvdTg3IiwiZW1haWwiOiJhYmJhc3NpQGVtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY4NzU5NTQ1MiwiZXhwIjoxNjg3NTk1NDYyfQ.ALMlNryOa3NJAtAHBXHVie1L5txEQBduV_DQblJiXc8
+[2023-06-24T10:30:52.449] [INFO] app - *********** nextId *********** 0
+[2023-06-24T10:30:52.451] [INFO] app - refreshToken :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwidmFsdWUiOiI5OTg2ZjY4Mi02ODc4LTQwYzgtYjU2Ny01NzJmY2Q5YWRkMzIiLCJ1c2VySWQiOjUsImlhdCI6MTY4NzU5NTQ1MiwiZXhwIjoxNjg3NTk1NTcyfQ.DKfHgjE13C1nbGLjXTb1YX26htjEw86qmRePXmJWNEo
+[2023-06-24T10:30:52.452] [INFO] app - refreshToken has been saved successfully!

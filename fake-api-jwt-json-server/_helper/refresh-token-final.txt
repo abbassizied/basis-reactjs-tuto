@@ -1,0 +1,25 @@
+my-super-secret-password
+
+Token expires at : 1687346484 
+Current Date :  1687346477194 
+ 
+Signing a token with 1 hour of expiration:
+
+jwt.sign({
+  exp: Math.floor(Date.now() / 1000) + (60 * 60),
+  data: 'foobar'
+}, 'secret'); 
+ 
+ 
+        expires: new Date(Date.now() + 15 * 60 * 1000),
+ 
+ 
+This is the answer:
+
+if (Date.now() >= exp * 1000) {
+  return false;
+} 
+ 
+ 
+ 
+

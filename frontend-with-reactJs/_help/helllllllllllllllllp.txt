@@ -1,0 +1,371 @@
+          axios
+            .post("${API}/posts", { title, author })
+            .then(function (response) {
+              console.log(response);
+              setIsSuccess(true);
+            })
+            .catch(function (error) {
+              console.log(error);
+              setIsError(true);
+              setErrorMsg(error);
+            });
+
+
+   
+
+npm install use-immer
+
+//-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+services/userServices.js /
+
+
+<Route path="/add" element={<AddMark />} />
+<Route path="/student/edit/:id" element={<EditMark />} />
+<Route path="/student/view/:id" element={<ViewMark />} />
+
+
+services
+
+//-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+react
+
+
+EditPost.js
+AddPost.js
+Posts.js
+PostService.js
+//-----------------------------------------------------------------------------------------------------------------------
+CRUD CREATE, READ, UPDATE and DELETE 
+weblog
+
+
+react-crud-app
+crud-operations-using-web-api-and-reactjs
+Basic Employee Management System With React & .Net Core, JWT Used For Authentication & Authorization
+
+src/components/Dashboard/Dashboard.js
+src/components/create-student.component.js
+edit-student.component.js
+student-list.component.js
+
+/create-student
+/edit-student/:id
+/update-student/:id
+/delete-student/:id
+
+REST API	URL
+GET			http://localhost:4000/students
+POST		/students/create-student
+GET			/students/edit-student/:id
+PUT			/students/update-student/:id
+DELETE		/students/delete-student/:id 
+
+
+/users
+/users/register
+/users/authenticate
+/users/{id}
+/users/1
+/forgot-password
+/reset-password
+/authenticate
+/refresh-token
+/revoke-token
+
+AuthService.js
+UserService.js
+
+//-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
+
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={3}>
+        <Grid xs>
+          <Item>xs</Item>
+        </Grid>
+        <Grid xs={6}>
+          <Item>xs=6</Item>
+        </Grid>
+        <Grid xs>
+          <Item>xs</Item>
+        </Grid>
+      </Grid>
+    </Box>
+
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+create: async function (post) {
+  const response = await api.request({
+    url: `/`,
+    method: "POST",
+    data: post,
+  })
+
+  return response.data
+},
+
+
+ initialValues={person}
+      onSubmit={(values) => {
+        submitForm(values);
+      }}
+	  
+	  
+ <form onSubmit={handleSubmit}>	  
+	  
+	  
+, { useState} 	  
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------	
+
+public class RefreshToken
+{
+    [Key]
+    public int Id { get; set; }
+    public Account Account { get; set; }
+    public string Token { get; set; }
+    public DateTime Expires { get; set; }
+    public DateTime Created { get; set; }
+    public string CreatedByIp { get; set; }
+    public DateTime? Revoked { get; set; }
+    public string RevokedByIp { get; set; }
+    public string ReplacedByToken { get; set; }
+    public string ReasonRevoked { get; set; }
+    public bool IsExpired => DateTime.UtcNow >= Expires;
+    public bool IsRevoked => Revoked != null;
+    public bool IsActive => Revoked == null && !IsExpired;
+}
+
+public enum Role
+{
+    Admin,
+    User
+}
+
+public class AccountResponse
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Email { get; set; }
+    public string Role { get; set; }
+    public DateTime Created { get; set; }
+    public DateTime? Updated { get; set; }
+    public bool IsVerified { get; set; }
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+// localStorage and sessionStorage
+
+const USER_REGEX = /^\[A-z\][A-z0-9-_]{3,23}$/;
+const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+
+  const [token, setToken] = useState();
+
+//-------------------------------------------------------------------------------------------------------------------
+
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+
+//-------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [successful, setSuccessful] = useState(false);
+
+  const { message } = useSelector(state => state.message);
+  const dispatch = useDispatch();
+
+  const onChangeUsername = (e) => {
+    const username = e.target.value;
+    setUsername(username);
+  };
+
+  const onChangeEmail = (e) => {
+    const email = e.target.value;
+    setEmail(email);
+  };
+
+  const onChangePassword = (e) => {
+    const password = e.target.value;
+    setPassword(password);
+  };
+//---------------------------------------------------------------------------
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [register, setRegister] = useState(false); 
+//---------------------------------------------------------------------------
+
+
+      {/* display success message */}
+        {login ? (
+          <p className="text-success">You Are Logged in Successfully</p>
+        ) : (
+          <p className="text-danger">You Are Not Logged in</p>
+        )}
+
+//---------------------------------------------------------------------------
+ProtectedRoutes.js
+
+
+//---------------------------------------------------------------------------
+
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const token = await loginUser({
+      username,
+      password
+    });
+    setToken(token);
+  }
+//-------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------
+ {status === 'error' && <------- ok ok ok 
+        <p className="Error">
+          Good guess but a wrong answer. Try again!
+        </p>
+ }
+ 
+  const [error, setError] = useState(null);
+        {error !== null &&
+          <p className="Error">
+            {error.message}
+          </p>
+        }
+//-------------------------------------------------------------------------------------------------------------------
+  const [person, setPerson] = useState('Alice');
+  const [bio, setBio] = useState(null);
+  useEffect(() => {
+    async function startFetching() {
+      setBio(null);
+      const result = await fetchBio(person);
+      if (!ignore) {
+        setBio(result);
+      }
+    }
+
+    let ignore = false;
+    startFetching();
+    return () => {
+      ignore = true;
+    }
+  }, [person]);
+//-------------------------------------------------------------------------------------------------------------------
+//*******************************************************************************************************************
+//*******************************************************************************************************************
+//*******************************************************************************************************************
+//  event handler vs Effect
+//*********************************
+- Why Effects are reactive, and event handlers are not?
+- What Effect Events are, and how to extract them from your Effects?
+- How to read the latest props and state from Effects using Effect Events?
+------------------------
+- Event handlers run in response to specific interactions
+- Effects run whenever synchronization is needed
+ 
+//*******************************************************************************************************************
+// Passing Data Deeply with Context
+//*********************************
+- Context: an alternative to passing props 
+- Context lets a parent component provide data to the entire tree below it. 
+- 
+- 
+// Step 1:  Create the Context
+// LevelContext.js
+import { createContext } from 'react';
+
+export const LevelContext = createContext(1);
+
+
+
+// Step 2: Use the context 
+import { useContext } from 'react';
+import { LevelContext } from './LevelContext.js';
+
+const level = useContext(LevelContext);
+
+// Step 3: Provide the context
+import { LevelContext } from './LevelContext.js';
+
+      <LevelContext.Provider value={level}>
+        {children}
+      </LevelContext.Provider>
+
+//*******************************************************************************************************************
+// xxxxxxxxxxxx
+//*********************************
+
+ 
+
+//*******************************************************************************************************************
+//*******************************************************************************************************************
+//*******************************************************************************************************************
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
